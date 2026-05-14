@@ -1,0 +1,16 @@
+        #colorPreview {
+            width: 200px;
+            height: 200px;
+            margin: 20px 0;
+            border: 2px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            border-radius: 8px;
+        }
+        #colorHistory {
+            list-style: none;
+            padding: 10px;
+            margin: 10px;
+        }
