@@ -1,0 +1,111 @@
+body {
+    font-family: Arial,sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.form-container {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+input, textarea, button {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+hr {
+    margin: 40px 0;
+    border: 0;
+    border-top: 1px solid #ddd;
+}
+
+
+.blog-post {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 25px;
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.blog-post h3 {
+    margin-top: 0;
+    color: #111;
+}
+
+.blog-post img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 15px 0;
+    border-radius: 4px;
+}
+
+.blog-post p {
+    line-height: 1.6;
+
+}
+
+.btn-group {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.edit-btn, .delete-btn {
+    width: auto;
+    padding: 6px 15px;
+    font-size: 13px;
+}
+
+.edit-btn {
+    background-color: #1c68ff;
+    color: #333;
+    border: 1px solid #ccc;
+}
+.edit-btn:hover {
+     background-color: #ffffff; 
+    }
+
+.delete-btn {
+    background-color: #d9534f;
+    color: white;
+}
+.delete-btn:hover { 
+    background-color: #c9302c;
+ }
