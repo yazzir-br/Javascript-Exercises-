@@ -1,0 +1,187 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding-top: 60px;
+}
+
+
+.navbar {
+    display: flex;
+    background-color: #333;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000
+    
+}
+
+.brand-title {
+    font-size: 1.5em;
+    line-height: 60px;
+}
+
+.navbar-links {
+    height: 100%;
+}
+
+.navbar-links ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    padding: 0 10px;
+}
+
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    line-height: 60px;
+    display: block;
+}
+
+.navbar-links a:hover {
+    background-color: #444;
+}
+
+
+.toggle-button {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.sections{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#home{
+    background-color: rgb(236, 54, 54);
+    color: white;
+
+}
+#about{
+    background-color: rgb(170, 134, 44);
+    color: white;
+
+}
+#services{
+    background-color: rgb(21, 80, 0);
+    color: white;
+
+}
+#services{
+    background-color: rgb(0, 105, 108);
+    color: white;
+
+}
+#portfolio{
+    background-color: rgba(1, 57, 160, 0.758);
+    color: white;
+
+}
+#plog{
+    background-color: rgb(90, 56, 159);
+    color: white;
+
+}
+#creer{
+    background-color: rgb(81, 0, 103);
+    color: white;
+
+}
+#contact{
+    background-color: rgb(122, 0, 47);
+    color: white;
+
+}
+
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+        opacity: 0;
+    }
+
+    .navbar-links ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar-links li {
+        text-align: center;
+    }
+
+    .navbar-links a {
+        padding: 10px;
+        line-height: 20px;
+    }
+  /* waxa lasoo qabanayaa 3 dii burgur  */
+    .navbar.active .navbar-links {
+        max-height: 300px;
+        opacity: 1;
+        transition: max-height 0.5s ease-in, opacity 0.5s ease-in;
+    }
+
+        /* waxa laga saarayaa line kii dhexe  */
+    .navbar.active .toggle-button .bar:nth-child(2) {
+        opacity: 0;
+    }
+ /* labadan waxa ay samaynayaan sida x oo kale  */
+    .navbar.active .toggle-button .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .navbar.active .toggle-button .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+
+    .sections{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+}
