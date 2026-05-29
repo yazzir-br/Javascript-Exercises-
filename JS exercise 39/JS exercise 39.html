@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translator Web</title>
+    <link rel="stylesheet" href="Jsexercise39.css">
+</head>
+<body>
+
+    <main class="container">
+        <h2>Translator App</h2>
+        
+        <div class="control-group">
+            <label for="fromLang">From:</label>
+            <select id="fromLang"></select>
+        </div>
+        
+        <div class="control-group">
+            <label for="toLang">To:</label>
+            <select id="toLang"></select>
+        </div>
+        
+        <textarea id="inputText" placeholder="Type text..."></textarea>
+        
+        <button onclick="translateText()">Translate</button>
+        
+        <section class="result-box">
+            <h3>Result:</h3>
+            <div id="outputText"></div> 
+        </section>
+    </main>
+
+    <script src="Js exercise 39.js"></script>
+</body>
+</html>
